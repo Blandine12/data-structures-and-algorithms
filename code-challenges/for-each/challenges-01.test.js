@@ -37,7 +37,9 @@ const addValues = (arr, value) => {
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  arr.push(num);
+
+  callback();
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,11 +55,13 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  // Solution code here...
+  removeOne.splice(arr,num);
 };
 
 const removeElements = (arr, callback) => {
-  // Solution code here...
+  for( let i = 0; i < arr.length; i++){
+    
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
