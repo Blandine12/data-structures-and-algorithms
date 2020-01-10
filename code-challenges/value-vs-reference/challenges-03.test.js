@@ -5,15 +5,16 @@ CHALLENGE 1
 
 Write a function named sortBackwards that takes in an array of numbers and returns the same array, with the numbers sorted, highest to smallest.
 ------------------------------------------------------------------------------------------------ */
-
+const num1 = [2, 3, 5, 6];
+const num2 = [3, 2, 1];
 const sortBackwards = (arr) => {
-  arr.sort (
-    (a, b) => {
-      return a>b ? -1 : 1;
-    }
-  );
+  arr.sort((a,b) => { return a<b;
+  });
+  console.log(arr);
 };
-
+sortBackwards(num1);
+sortBackwards(num2);
+sortBackwards([32,20,3]);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -23,19 +24,22 @@ In this alphabetization, capital letters come before lower case letters.
 
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
-
+const names = ['Alphabet', 'Zebra', 'alphabet', 'carrot']
 const alphabetize = (arr) => {
-  arr.sort((a, b)  => {
+  arr.sort((a, b) => {
     if (a < b){
-      return 1;
+      return -1;
     } else if (a > b) {
-      return -1
+      return 1;
     }else {
-      return 0
-  };
-  return arr;
+      return 0;
+    }
+  });
+  console.log(arr);
 
 };
+alphabetize(names);
+alphabetize(['Alphabet', 'alphabet', 'carrot']);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -119,10 +123,23 @@ If two people share the same last name, alphabetize on their first name.
 
 If two people have the same full name, the younger one should come first. Do not worry about capitalization.
 ------------------------------------------------------------------------------------------------ */
+const family =[
+  new Person('Dansou', 'Gabriel', 35),
+  new Person('Dayane', 'Gareth', 10),
+  new Person('Darina', 'Gavrina', 5),
+];
 
-const sortPeopleBetter = (arr) => {
+const sortPeopleBetter = (arr) => arr.sort((a,b) => {
   // Solution code here...
-};
+  return a.lastName < b.lastName ? -1
+    :a.lastName > b.lastName ? 1
+    :a.firstName < b.firstName ? -1
+    :a.firstName > b.firstName ? 1
+    :a.age < b.age ? -1
+    :a.age > b.age ? 1
+
+});
+sortPeopleBetter(family);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
