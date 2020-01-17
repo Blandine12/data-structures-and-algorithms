@@ -261,8 +261,4 @@ describe('Testing challenge 7', () => {
     ]);
     expect(extractStats(snorlaxStats.stats).length).toStrictEqual(3);
   });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 0039a8d6dfb093ffd2df08c0f5b6a6492fdc1672
