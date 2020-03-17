@@ -12,4 +12,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 unshift methode helps push element to array from the front, I think it will be good and easy fo me to use that methode with a given array  and I can unshift to revearse them. It might be another methode that will help to push the reverse number into a new array. 
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![](array-reverse.jpg)
