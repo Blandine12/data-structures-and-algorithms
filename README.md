@@ -31,5 +31,5 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 
 ## Solution
-![alt text](./assets/array-shift.jpg)
+![alt text](./assets/arrayshift.jpg)
  
