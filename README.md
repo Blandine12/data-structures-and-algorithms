@@ -31,5 +31,24 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 
 ## Solution
-![alt text](./assets/arrayshift.jpg)
+binaryarray
+![alt text](./assets/array-shift.jpg)
+
+
+# Binary Array
+
+## Challenge
+
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach & Efficiency
+
+I decided first to create an empty array to add elements to as I believed it would be more difficult to modify the input array. I created an independan counter for the new array as they will have different lengths eventually. I then chose to iterate through the input array and insert each element into the new array with each iteration. Once the iteration reached halfway through the input array rounding up minus 1 I set the new arrays value to equal the input value then continued with the loop. I returned the new array.
+
+
+
+## Solution
+
+
+
  
