@@ -31,6 +31,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 
 ## Solution
+binaryarray
 ![alt text](./assets/array-shift.jpg)
 
 
@@ -47,6 +48,7 @@ I decided first to create an empty array to add elements to as I believed it wou
 
 
 ## Solution
+
 
 
  
