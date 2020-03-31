@@ -12,16 +12,19 @@
 This application will  implement a Linked List.
 
 
-### Approach & Efficiency
-Created two classes: Node and LinkedList
-Created methods to insert, include, and tostring.
-Big-O:
+- [submission PR](https://github.com/Blandine12/data-structures-and-algorithms/pull/25)
 
-insert(): O(1)
-includes(): O(n)
-toString(): O(n)
+
+### Approach & Efficiency
+- Created two classes: Node and LinkedList
+- Created methods to insert, include, and tostring.
+- Big-O:
+
+- insert(): O(1)
+- includes(): O(n)
+- toString(): O(n)
 
 ### Test
-* npm test linked-list
+- npm test linked-list
 
 
