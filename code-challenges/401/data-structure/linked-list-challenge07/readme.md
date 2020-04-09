@@ -16,12 +16,11 @@
 
 ### Approach & Efficiency
 - Created two classes: Node and LinkedList
-- Created methods to insert, include, and tostring.
+- Created kth from end 
 - Big-O:
 
 - .append(value): o(n)
-- .insertBefore(value, newVal): O(n)
-- .insertAfter(value, newVal): O(n)
+- kth from end O(n)
 
 ### Test
 - npm test linked-list-challenge07 

@@ -109,6 +109,27 @@ class LinkedList {
 
     return str;
   }
+
+  kthFromEnd(k) {
+    if(k < 0) return false;
+    
+    let currentNode = this.head;
+    let arr = [];
+    
+    while(currentNode) {
+      arr.push(currentNode.val);
+      currentNode = currentNode.next;
+    }
+
+    if(k >= arr.length) return false;
+
+    return arr[arr.length - 1 - k];
+  }
+
+
 }
+
+
+
 
 module.exports = LinkedList;

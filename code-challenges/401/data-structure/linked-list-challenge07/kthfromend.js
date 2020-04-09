@@ -15,16 +15,49 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
+
+  append(newVal) {
+   
+
+    let currentNode = this.head;
+
+    // what if list is empty
+    if (!currentNode) {
+      this.head = new Node(newVal);
+      return;
+    }
+
+    // while (null.next)
+    while (currentNode.next) {
+      // not null
+      currentNode = currentNode.next;
+    }
+
+
+
+    let newNode = new Node(newVal);
+    // currentNode is the end of the list
+    currentNode.next = newNode;
+  }
+
+
+
+  kthFromEnd(k) {
+    if(k < 0) return false;
+
+    let currentNode = this.head;
+    let arr = [];
+
+    while(currentNode) {
+      arr.push(currentNode.val);
+      currentNode = currentNode.next;
+    }
+
+    if(k >= arr.length) return false;
+
+    return arr[arr.length - 1 - k];
+  }
 }
-
-
-
-
-
-
-
-
-
 
 
 
