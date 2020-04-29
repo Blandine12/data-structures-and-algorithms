@@ -17,7 +17,6 @@ class LinkedList {
   }
 
   append(newVal) {
-   
 
     let currentNode = this.head;
 
@@ -33,14 +32,10 @@ class LinkedList {
       currentNode = currentNode.next;
     }
 
-
-
     let newNode = new Node(newVal);
     // currentNode is the end of the list
     currentNode.next = newNode;
   }
-
-
 
   kthFromEnd(k) {
     if(k < 0) return false;
