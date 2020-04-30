@@ -49,4 +49,58 @@ I decided first to create an empty array to add elements to as I believed it wou
 ## Solution
 
 
- 
+
+# Shift Array
+
+## Challenge
+
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+
+## Approach & Efficiency
+
+- create an empty array to add elements to as I believed it would be more difficult to modify the input array.
+- created an independan counter for the new array as they will have different lengths eventually. 
+- iterate through the input array and insert each element into the new array with each iteration. 
+- returned the new array.
+
+
+
+
+
+
+
+
+# multiBrackectValidation
+
+## Challenge
+
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {} 
+
+## Approach & Efficiency
+
+- class Node
+The val stored in the Node next - A pointer the next Node in the list
+
+- Stack Class properties
+  - push()
+
+  which takes any value as an argument and adds a new node with that value to the top of the stack. big O: o(1)
+
+  - pop()
+
+  Removes the node from the top of the stack, and returns the node’s value.
+    
+
+  - Validator function
+
+  If the brackets are open or closed, open will push to the stack and closed bracket will pop from the stack. If matches it will return booloen.
+
+
+
+## Solution
+![alt text](./assets/multibracket.jpg)
+
