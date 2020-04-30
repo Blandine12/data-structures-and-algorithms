@@ -36,4 +36,4 @@ The val stored in the Node next - A pointer the next Node in the list
 
 
 ## Solution
-![alt text](../assets/multibracket.jpg)
+![alt text](./assets/multibracket.jpg)
