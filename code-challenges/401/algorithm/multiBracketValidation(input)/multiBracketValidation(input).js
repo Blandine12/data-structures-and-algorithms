@@ -5,6 +5,7 @@ Round Brackets : ()
 Square Brackets : []
 Curly Brackets : {} */
 
+
 class Node {
   constructor(val) {
     this.val = val;
