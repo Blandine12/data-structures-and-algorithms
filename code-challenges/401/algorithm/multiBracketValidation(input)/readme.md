@@ -39,3 +39,6 @@ The val stored in the Node next - A pointer the next Node in the list
 
 ## Solution
 ![alt text](./assets/multibracket.jpg)
+
+# test 
+npm test multiBracketValidation
