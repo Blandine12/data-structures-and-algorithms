@@ -6,6 +6,8 @@
 
 # multiBrackectValidation
 
+[submission PR](https://github.com/Blandine12/data-structures-and-algorithms/pull/30)
+
 ## Challenge
 
 Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
@@ -36,4 +38,4 @@ The val stored in the Node next - A pointer the next Node in the list
 
 
 ## Solution
-![alt text](./assets/multibracket.jpg)
+![alt text](./asset/multibracket.jpg)
