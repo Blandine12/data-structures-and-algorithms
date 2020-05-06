@@ -15,7 +15,7 @@ class BinaryTree {
     this.storage = [];
   }
 
-  preOrder(root) {
+  preOrder(root = this.root) {
     if (!root) {
       return 'Where\'s the node!';
     }
@@ -30,7 +30,7 @@ class BinaryTree {
     return this.storage;
   }
 
-  inOrder(root) {
+  inOrder(root = this.root) {
     if(!root) {
       return 'Where\'s the node!';
     }
@@ -43,7 +43,7 @@ class BinaryTree {
     }
     return this.storage;
   }
-  postOrder(root) {
+  postOrder(root = this.root) {
     if (!root) {
       return 'Where\'s the node!';
     }
@@ -59,6 +59,11 @@ class BinaryTree {
 }
 
 class BinarySearchTree extends BinaryTree {
+
+  constructor(){
+    super();
+  }
+
   add(value) {
     const node = new Node(value);
     if (!this.root) {
@@ -77,6 +82,21 @@ class BinarySearchTree extends BinaryTree {
       }
     }
 
+  }
+
+
+
+  contains(value) {
+    const node = new Node(value);
+    let currentNode = this.root;
+
+    while (currentNode) {
+      if (node.value > currentNode.value) currentNode = currentNode.left;
+      else if (node.value <currentNode.value) currentNode = currentNode.right;
+      else if (node.value === currentNode.value) return true;
+    }
+
+    return false;
   }
 
 }
