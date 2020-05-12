@@ -21,7 +21,7 @@
 
 
 ## Solution
-![alt text](./assets/breadthfirst.jpg)
+![alt text](./assets/breadthfirst.PNG)
 
 
 ### Test
