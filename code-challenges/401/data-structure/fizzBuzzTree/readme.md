@@ -22,7 +22,7 @@ Return the new tree.
 
 ### Approach & Efficiency
 
-
+I decided to approach this problem by traversing depth first in the style of an inOrder method as I will need to hit every node once to read its value. I created a new node in the traversal to make the coding easier. I created a separate function to perform the comparison which is called at the beginning of the traversal.
 
 ### Test
-- npm test llmerge
+- npm test fizzBuzzTree
