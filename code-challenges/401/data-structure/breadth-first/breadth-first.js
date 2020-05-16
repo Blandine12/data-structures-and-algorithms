@@ -14,7 +14,9 @@ class BinaryTree {
     this.root = root;
   }
 
-
+  findMaximumValue() {
+    return this.preOrderIsh(this.root, -Infinity);
+  }
   preOrderIsh(root, max) {
     if(root.value > max) {
       max = root.value;
