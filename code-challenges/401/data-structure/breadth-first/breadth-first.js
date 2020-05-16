@@ -14,9 +14,7 @@ class BinaryTree {
     this.root = root;
   }
 
-  findMaximumValue() {
-    return this.preOrderIsh(this.root, -Infinity)
-  }
+
   preOrderIsh(root, max) {
     if(root.value > max) {
       max = root.value;
@@ -25,7 +23,8 @@ class BinaryTree {
       max = this.preOrderIsh(root.left, max);
     }
     if(root.right !== null) {
-      max = this.preOrderIsh(root.right, max)
+      max = this.preOrderIsh(root.right, max);
+
     }
     return max;
   }
@@ -44,11 +43,12 @@ function breadthFirst(tree) {
       queue.push(current.left);
     }
     if(current.right !== null) {
-      queue.push(current.right)
+      queue.push(current.right);
     }
   }
   return newArray;
 }
 
-module.exports = { Node, BinaryTree, breadthFirst }
+module.exports = { Node, BinaryTree, breadthFirst };
+
 
