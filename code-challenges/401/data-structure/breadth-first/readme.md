@@ -28,3 +28,32 @@
 
 ### Test
 - npm test breadth-first
+
+# code challenge 17
+
+## DSA: Find Max Value.
+
+### Author: Blandine Dasilveira
+
+### Links and Resources
+
+
+### Challenge
+- 
+
+
+- [submission PR](https://github.com/Blandine12/data-structures-and-algorithms/pull/34)
+
+
+### Approach & Efficiency
+- 
+
+
+
+
+## Solution
+![alt text](./assets/breadthfirst.PNG)
+
+
+### Test
+- npm test breadth-first
