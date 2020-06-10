@@ -10,7 +10,7 @@ describe('Testing insertionSort function', () => {
   });
 
  
-  test('sort an array given uniq number', () => {
+  test('sort an array given few uniques', () => {
     const sorted = insertionSort([5, 10, 6, 5, 5, 6]);
     expect(sorted).toEqual([5, 5, 5, 6, 6, 10]);
   });
