@@ -8,13 +8,11 @@
 
 
 ### Challenge
--  
+-  Find the first repeated word in a book.
 
 
-- [submission PR]()
+- [submission PR](https://github.com/Blandine12/data-structures-and-algorithms/pull/39)
 
-
-### Approach & Efficiency
 
 
 
